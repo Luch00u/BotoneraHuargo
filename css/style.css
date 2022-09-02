@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+button {
+  height: 70px;
+  width: 70px;
+  border-radius: 50px;
+  background: linear-gradient(to bottom, #6c0404, #6c0404, #7c1818, #6c0404, #6c0404);
+  box-shadow: 0px 10px 5px black; }
+
+/*------- MIXIN -------*/
+/* ------ ANIMACIONES --------*/
+@keyframes animacionHeader {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 150%; }
+  100% {
+    background-position: 200% 0%; } }
+
+/*------- MIXIN -------*/
+/* ------ ANIMACIONES --------*/
+@keyframes animacionHeader {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 150%; }
+  100% {
+    background-position: 200% 0%; } }
+
+@media screen and (min-width: 768px) {
+  header {
+    display: grid;
+    grid-template-areas: "logo titulo titulo";
+    align-items: center; }
+    header .logo {
+      grid-area: logo;
+      height: 5rem; }
+    header .titulo {
+      grid-area: titulo;
+      text-align: start;
+      margin-left: 310px; }
+  main .container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center; } }
+
+/*------- MIXIN -------*/
+/* ------ ANIMACIONES --------*/
+@keyframes animacionHeader {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 150%; }
+  100% {
+    background-position: 200% 0%; } }
+
+@media screen and (max-width: 768px) {
+  button {
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    background: linear-gradient(to bottom, #6c0404, #6c0404, #7c1818, #6c0404, #6c0404);
+    box-shadow: 0px 10px 5px black; }
+  body {
+    background: linear-gradient(45deg, #505050, #8f8f8f, #595959); }
+    body header {
+      border: 1px solid black;
+      width: 100%;
+      height: 150px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      background-size: 200%;
+      background-image: linear-gradient(to right, #020343, #160b8b, #02024d);
+      animation: animacionHeader 5s infinite; }
+      body header .fa-sharp {
+        font-size: 38px;
+        color: white; }
+      body header .logo {
+        height: 100px;
+        width: 100px; }
+      body header .titulo {
+        font-size: 30px;
+        color: white;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px; }
+    body main .container {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px; }
+      body main .container .crusher, body main .container .lucho, body main .container .dody, body main .container .xtridex {
+        height: 200px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        body main .container .crusher .box-container, body main .container .lucho .box-container, body main .container .dody .box-container, body main .container .xtridex .box-container {
+          height: 100%;
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          align-items: center;
+          align-content: center; }
+          body main .container .crusher .box-container div, body main .container .lucho .box-container div, body main .container .dody .box-container div, body main .container .xtridex .box-container div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            gap: 20px; }
+            body main .container .crusher .box-container div h3, body main .container .lucho .box-container div h3, body main .container .dody .box-container div h3, body main .container .xtridex .box-container div h3 {
+              display: flex;
+              flex-direction: column;
+              font-size: 20px;
+              text-align: center; } }

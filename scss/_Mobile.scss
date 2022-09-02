@@ -1,0 +1,98 @@
+@import "variables";
+
+@media screen and(max-width:768px) {
+  button {
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    background: linear-gradient(
+      to bottom,
+      rgb(108, 4, 4),
+      rgb(108, 4, 4),
+      rgb(124, 24, 24),
+      rgb(108, 4, 4),
+      rgb(108, 4, 4)
+    );
+    box-shadow: 0px 10px 5px black;
+  }
+  body {
+    background:linear-gradient(45deg,rgb(80, 80, 80),rgb(143, 143, 143),rgb(89, 89, 89));
+    header {
+      border: 1px solid black;
+      width: 100%;
+      height: 150px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      background-size: 200%;
+      background-image: linear-gradient(
+        to right,
+        rgb(2, 3, 67),
+        rgb(22, 11, 139),
+        rgb(2, 2, 77)
+      );
+      animation: animacionHeader 5s infinite;
+      .fa-sharp {
+        font-size: 38px;
+        color: white;
+      }
+      .logo {
+        height: 100px;
+        width: 100px;
+        //   border-top-right-radius: 10px;
+        //   border-bottom-right-radius: 10px;
+      }
+      .titulo {
+        font-size: 30px;
+        color: white;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+      }
+    }
+    main {
+      .container {
+        padding: 20px;
+        @include flexbox(flex, column, center, center);
+        gap: 20px;
+        .crusher {
+          height: 200px;
+          width: 100%;
+          @include flexbox(flex, column, center, center);
+          .box-container {
+            //Edicion de botones y frases (h3).
+            // padding: 20px;
+            height: 100%;
+            width: 100%;
+            @include flexbox(flex, row, space-evenly, center);
+            align-content: center;
+            div {
+              @include flexbox(flex, column, center, center);
+              align-content: center;
+              gap: 20px;
+              h3 {
+                display: flex;
+                flex-direction: column;
+                font-size: 20px;
+                text-align: center;
+              }
+            }
+          }
+        }
+        .lucho {
+          @extend .crusher;
+        }
+        .dody {
+          @extend .lucho;
+        }
+        .xtridex {
+          @extend .dody;
+        }
+      }
+    }
+  }
+}

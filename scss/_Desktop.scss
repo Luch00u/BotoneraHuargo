@@ -1,0 +1,24 @@
+@import "variables";
+
+@media screen and(min-width:768px) {
+  header {
+    display: grid;
+    grid-template-areas: "logo titulo titulo";
+    align-items: center;
+    .logo {
+      grid-area: logo;
+      height: 5rem;
+    }
+    .titulo {
+      grid-area: titulo;
+      text-align: start;
+      margin-left: 310px;
+    }
+  }
+  main {
+    .container {
+      margin-top: 50px;
+      @include flexbox(flex, row, space-evenly, center);
+    }
+  }
+}
